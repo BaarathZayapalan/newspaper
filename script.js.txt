@@ -1,0 +1,20 @@
+ // Validate the email
+  if (!email || !emailInput.checkValidity()) {
+    message.style.color = "#d93025";
+    message.textContent = "Please enter a valid email address.";
+
+    emailInput.focus();
+    return;
+  }
+
+  // Demonstration success message
+  message.style.color = "#16804a";
+  message.textContent = "Thank you for subscribing!";
+
+  form.reset();
+});
+
+// Clear the message when the user edits the email
+emailInput.addEventListener("input", function () {
+  message.textContent = "";
+});

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Subscription</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="newsletter-card">
+    <section class="newsletter-content">
+      <h1>Stay updated!</h1>
+
+      <p class="description">
+        Join 60,000+ product managers receiving monthly
+        updates on:
+      </p>
+
+      <ul class="features">
+        <li>
+          <span class="check" aria-hidden="true">✓</span>
+          <span>Product discovery and building what matters</span>
+        </li>
+        <li>
+          <span class="check" aria-hidden="true">✓</span>
+          <span>Measuring to ensure updates are a success</span>
+        </li>
+        <li>
+          <span class="check" aria-hidden="true">✓</span>
+          <span>And much more!</span>
+        </li>
+      </ul>
+
+      <form id="newsletterForm" novalidate>
+        <label for="email">Email address</label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@company.com"
+          autocomplete="email"
+          required
+          aria-describedby="message"
+        >
+
+        <button type="submit">
+          Subscribe to monthly newsletter
+        </button>
+
+        <p id="message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="newsletter-image">
+      <img
+        src="illustration-sign-up-desktop.svg"
+        alt="Illustration of product analytics and performance metrics"
+        class="desktop-image"
+      >
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
